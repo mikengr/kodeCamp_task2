@@ -1,0 +1,32 @@
+A web application can be broadly described to consist of two parts; a client side and a server side. While the client side allows the
+ user to interact with the application, the server side houses all the business/application logic that enables the smooth running of the
+ application.
+
+ In order for these two key parts of a web application to interact seemlessly, developers over the years have described protocols that
+ allow for the transmission of information (data) from the server side to the client side (browsers) via a concept known as requests.
+ Thus simply put a web request is the terms of communication via which messages are transmitted from a web browser to a server. The
+ terms are usually fullfilled when the server transmits back an appropiate response.
+
+Over the years, many protocols (strategies of communication) have been developed for transferring data from one machine to another across
+ the internet, however because the foundations of the mordern web is tightly anchored on HTML, web browser depend heavily on the Hypertext
+ Transfer Protocol (HTTP) to communicate with web servers.
+
+ HTTP is a text based protocol whose nomenclature is defined by 4 key parts:
+    1. the Method: typical describes the nature of the request and consists of 4 types, each representing a specific set of rules by which
+        data can be handled/manipulated between client and server. These methods include:
+        a. GET: for retrieving data
+        b. POST: for creating data
+        c. PUT/PATCH: for modifying or updating data
+        d. DELETE: for deleting data
+
+    2. the Host: this describes where the server is located on the internet
+
+    3. the request Path: specifies where the intended resource, information or data can be located on the server
+
+    4. the protocol version: describes what version of the protocol used in the request
+
+    These consist the basic anatomy that defines a valid web request.
+
+Nonetheless, a request may still contain some other parts such as: a header, a request body, and a query string. Though optional, these provide 
+additional information that helps a website fulfill its request depending on the methods called. For instance, a request body will be required 
+to fulfill a post or put request since they specify data to be stored or updated at the server side.
